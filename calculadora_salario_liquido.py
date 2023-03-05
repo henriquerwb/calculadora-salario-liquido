@@ -1,4 +1,4 @@
-def calcular_aliquota(salario):
+def calcular_aliquota(salario): #Função para calcular a aliquota de desconto do INSS.
     if salario == 1302:
         aliquota = 0.075
     elif salario > 1302 and salario <= 2571.29:
