@@ -48,7 +48,7 @@ def main():
     outros_descontos = float(input('Digite outros descontos fora INSS e VT: '))
     desconto_inss = calcular_inss(salario, calcular_aliquota(salario))
     salario_liquido = salario - desconto_inss - valor_passagem - outros_descontos
-    print(f'Seu salário líquido é {salario_liquido:.2f} R$')
+    print(f'Seu salário líquido é {salario_liquido:.2f} R$ e o total de descontos é de {desconto_inss + valor_passagem + outros_descontos} R$.')
 
 
 
