@@ -32,7 +32,7 @@ def calcular_passagem(salario):
 
 
 def main():
-    salario = float(input('Digite o  seu salário: '))
+    salario = float(input('Digite o  seu salário bruto: '))
     contador = 0
     while contador == 0:
         escolha_passagem = str(input('Possui o benefício de vale transporte? (S/N): ')).upper()
