@@ -36,7 +36,7 @@ def main():
     contador = 0
     while contador == 0:
         escolha_passagem = str(input('Possui o benefício de vale transporte? (S/N): ')).upper()
-        if escolha_passagem == 'Y':
+        if escolha_passagem == 'S':
             valor_passagem = calcular_passagem(salario)
             contador = 1
         elif escolha_passagem == 'N':
@@ -48,7 +48,7 @@ def main():
     outros_descontos = float(input('Digite outros descontos fora INSS e VT: '))
     desconto_inss = calcular_inss(salario, calcular_aliquota(salario))
     salario_liquido = salario - desconto_inss - valor_passagem - outros_descontos
-    print(f'Seu salário líquido é {salario_liquido:.2f} R$ e o total de descontos é de {desconto_inss + valor_passagem + outros_descontos} R$.')
+    print(f'Seu salário líquido é {salario_liquido:.2f} R$ e o total de descontos é de {desconto_inss + valor_passagem + outros_descontos:.2f} R$.')
 
 
 
